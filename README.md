@@ -12,7 +12,7 @@ This page contains the course materials and final projects, developed at the **U
 
 ## 👨‍🏫 Administrative
 
-- **Instructor:** [Ali Tourani](http://alitourani.ir/downloadable-files/ "Ali Tourani")
+- **Instructor:** [Ali Tourani](http://alitourani.ir/course-material/ "Ali Tourani")
 - **TAs:**
 	- To be defined soon
 - **Credits:** 3
