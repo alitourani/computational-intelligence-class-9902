@@ -14,7 +14,13 @@ This page contains the course materials and final projects, developed at the **U
 
 - **Instructor:** [Ali Tourani](http://alitourani.ir/course-material/ "Ali Tourani")
 - **TAs:**
-	- To be defined soon
+	- [Reza Khan Mohammadi](https://ledengary.github.io/ "Reza Khan Mohammadi")
 - **Credits:** 3
 - **Time**: Tuesdays, 15:30 – 17:00, 17:15 – 18:30
 - **Location**: This semester, classes are held online due to the spread of COVID-19. E-Contents and videos are being continuously shared and updated on the [University of Guilan E-Learning website](https://ecent2.guilan.ac.ir/ "University of Guilan's E-Learning website"). Online (live) classes are held **every second Tuesdays** according to the the table below.
+
+### Online Classes
+
+| # | Date |
+| ------------ | ------------ |
+| 1 | 20th Esfand 1399 (10th March 2021) – 18:30 to 20:00 |
