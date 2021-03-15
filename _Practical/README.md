@@ -7,7 +7,10 @@ This folder contains sample codes, videos, and resources provided for the studen
 links to be defined here ...
 
 ## Videos
-- **Session 1:** [Link](https://drive.google.com/file/d/1N36plgEhD2WiiDxju-DXCcdb8_3bcO70/view?usp=sharing "Numpy")
+
+| Date | Link |
+| ------------ | ------------ |
+| 25th Esfand 1399 (15th March 2021) | [Part 1 (Numpy)](https://drive.google.com/file/d/1N36plgEhD2WiiDxju-DXCcdb8_3bcO70/view?usp=sharing "Part 1 (Numpy)") - [Part 2 (Pandas)](https://drive.google.com/file/d/1DcMvc_jFhH_5hqelLM62IIf9go0hdSV_/view?usp=sharing "Part 2 (Pandas)") |
 
 ## Resources
 links to be defined here ...
