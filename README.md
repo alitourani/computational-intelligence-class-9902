@@ -24,3 +24,4 @@ This page contains the course materials and final projects, developed at the **U
 | # | Date |
 | ------------ | ------------ |
 | 1 | 20th Esfand 1399 (10th March 2021) – 18:30 to 20:00 |
+| 2 | 15th Farvarding 1400 (4th August 2021) – 18:00 to 19:30 |
