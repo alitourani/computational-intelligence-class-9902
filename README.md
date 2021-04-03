@@ -24,10 +24,11 @@ This page contains the course materials and final projects, developed at the **U
 | # | Date | Status |
 | ------------ | ------------ | ---------- |
 | 1 | 20th Esfand 1399 (10th March 2021) – 18:30 to 20:00 | Held |
-| 2 | 15th Farvardin 1400 (4th August 2021) – 18:00 to 19:30 | |
+| 2 | 17th Farvardin 1400 (6th August 2021) – 18:00 to 19:30 | |
 
 ## 🔨 Project Titles
 
 | # | Project title | Member(s) |
 | ------------ | ------------ | ------------ |
 | 1 | To be defined | 970122680033, 9712268100 |
+| 1 | To be defined | 9712268105, 960122680104 |
