@@ -13,4 +13,6 @@ links to be defined here ...
 | 25th Esfand 1399 (15th March 2021) | [Part 1 (Numpy)](https://drive.google.com/file/d/1N36plgEhD2WiiDxju-DXCcdb8_3bcO70/view?usp=sharing "Part 1 (Numpy)") - [Part 2 (Pandas)](https://drive.google.com/file/d/1DcMvc_jFhH_5hqelLM62IIf9go0hdSV_/view?usp=sharing "Part 2 (Pandas)") |
 
 ## Resources
-links to be defined here ...
+[1] http://introtodeeplearning.com/
+[2] https://www.manning.com/books/deep-learning-with-python
+[3] https://www.tutorialspoint.com/python_deep_learning/index.htm
