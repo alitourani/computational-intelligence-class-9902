@@ -10,7 +10,9 @@ links to be defined here ...
 
 | Date | Link |
 | ------------ | ------------ |
-| 25th Esfand 1399 (15th March 2021) | [Part 1 (Numpy)](https://drive.google.com/file/d/1N36plgEhD2WiiDxju-DXCcdb8_3bcO70/view?usp=sharing "Part 1 (Numpy)") - [Part 2 (Pandas)](https://drive.google.com/file/d/1DcMvc_jFhH_5hqelLM62IIf9go0hdSV_/view?usp=sharing "Part 2 (Pandas)") |
+| 25th Esfand 1399 (15th March 2021) | [Part 1 (Numpy)](https://drive.google.com/file/d/1qAv7rK-v4uccTbT96JXYI-GlA7nsa_YK/view?usp=sharing "Part 1 (Numpy)") - [Part 2 (Pandas)](https://drive.google.com/file/d/1DcMvc_jFhH_5hqelLM62IIf9go0hdSV_/view?usp=sharing "Part 2 (Pandas)") |
+| ------------ | ------------ |
+| 25th Esfand 1399 (15th March 2021) | [Part 1 (Numpy)](https://drive.google.com/file/d/1qAv7rK-v4uccTbT96JXYI-GlA7nsa_YK/view?usp=sharing "Part 1 (Numpy)") |
 
 ## Resources
 - http://introtodeeplearning.com/
