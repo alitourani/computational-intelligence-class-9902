@@ -10,7 +10,7 @@ links to be defined here ...
 
 | Date | Link |
 | ------------ | ------------ |
-| 25th Esfand 1399 (15th March 2021) | [Part 1 (Numpy)](https://drive.google.com/file/d/1qAv7rK-v4uccTbT96JXYI-GlA7nsa_YK/view?usp=sharing "Part 1 (Numpy)") - [Part 2 (Pandas)](https://drive.google.com/file/d/1DcMvc_jFhH_5hqelLM62IIf9go0hdSV_/view?usp=sharing "Part 2 (Pandas)") |
+| 25th Esfand 1399 (15th March 2021) | [Part 1 (Numpy)](https://colab.research.google.com/drive/1cq4bgRaqASNLvgm3mNcKaUssan7vCUpD?usp=sharing "Part 1 (Numpy)") - [Part 2 (Pandas)](https://drive.google.com/file/d/1DcMvc_jFhH_5hqelLM62IIf9go0hdSV_/view?usp=sharing "Part 2 (Pandas)") |
 | 24th Farvardin 1400 (13th April 2021) | [PyTorch Introduction](https://drive.google.com/file/d/1qAv7rK-v4uccTbT96JXYI-GlA7nsa_YK/view?usp=sharing "PyTorch Introduction") |
 
 ## Resources
