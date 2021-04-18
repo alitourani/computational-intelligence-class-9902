@@ -36,3 +36,4 @@ This page contains the course materials and final projects, developed at the **U
 | 4 | To be defined | 970122681006, 970122680015 |
 | 5 | To be defined | 960122680008, 960122680027 |
 | 6 | To be defined | 960122680098, 960122680099 |
+| 7 | To be defined | 980122680005, 980122680100, 980122680094, 980122680095 |
