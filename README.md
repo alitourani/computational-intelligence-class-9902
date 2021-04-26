@@ -59,3 +59,9 @@ Each studen group can choose one of the available project titles before it is ta
 | 11 | Chatbot | Text |
 | 12 | Breast cancer prediction | Image data |
 | 13 | Fake news detection | Text |
+
+## 🔗 Useful Links
+
+- [Introduction to Pytorch](https://www.aparat.com/v/EMw10?playlist=648957 "Introduction to Pytorch")
+- [Binary AND Neural Network](https://colab.research.google.com/drive/1uXsT5gbKNawp1QBRy03FhN0KQmW_KRZN?usp=sharing "Binary AND Neural Network")
+- [Simple Convolutional Neural Network](https://colab.research.google.com/drive/13IZ7Z0SEkx2ikEE5sNGm3NQbcKlOxaG7?usp=sharing "Simple Convolutional Neural Network"))
