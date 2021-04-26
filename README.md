@@ -26,7 +26,7 @@ This page contains the course materials and final projects, developed at the **U
 | 1 | 20th Esfand 1399 (10th March 2021) – 18:30 to 20:00 | Held |
 | 2 | 17th Farvardin 1400 (6th August 2021) – 18:00 to 19:30 | Held |
 
-## 🔨 Project Titles
+## 🔨 Teams and Project Titles
 
 | # | Project title | Member(s) |
 | ------------ | ------------ | ------------ |
@@ -39,3 +39,23 @@ This page contains the course materials and final projects, developed at the **U
 | 7 | To be defined | 980122680005, 980122680100, 980122680094, 980122680095 |
 | 8 | To be defined | 970122680099, 980122680042, 980122681010 |
 | 9 | To be defined | 980122680046, 980122680023, 980122680029 |
+
+### ⚠️ Available Project Titles ⚠️
+
+Each studen group can choose one of the available project titles before it is taken by other groups. Project titles should be unique and are assigned to only one group. So, choose a project title and email it with your group number to the lecturer or TA ASAP. Consider that all of the projects should be implemented by Deep Neural Networks approaches. Refer to the practical classes for more information about how to work on a deep learning-based project.
+
+| # | Project title | Description |
+| ------------ | ------------ | -------- |
+| 1 | Face detection  | Image data |
+| 2 | Music genre classification | Audio data |
+| 3 | Sales forecasting | Time Series |
+| 4 | Drowsiness detection | Image data |
+| 5 | Stock prices prediction | Time Series |
+| 6 | Social Media Sentiment Analysis | Text |
+| 7 | Measuring semantic textual similarity | Text |
+| 8 | Spoken digit classification | [Audio data](https://github.com/Jakobovski/free-spoken-digit-dataset "Audio data") |
+| 9 | Image captioning | Image & Text |
+| 10 | Sign language recognition | Image data |
+| 11 | Chatbot | Text |
+| 12 | Breast cancer prediction | Image data |
+| 13 | Fake news detection | Text |
