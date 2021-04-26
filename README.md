@@ -42,7 +42,7 @@ This page contains the course materials and final projects, developed at the **U
 
 ### ⚠️ Available Project Titles ⚠️
 
-Each studen group can choose one of the available project titles before it is taken by other groups. Project titles should be unique and are assigned to only one group. So, choose a project title and email it with your group number to the lecturer or TA ASAP. Consider that all of the projects should be implemented by Deep Neural Networks approaches. Refer to the practical classes for more information about how to work on a deep learning-based project.
+Each studen group can choose one of the available project titles before it is taken by other groups. Project titles should be unique and are assigned to only one group. So, choose a project title and email it with your group number to the lecturer or TA ASAP. Consider that all of the projects should be implemented by Deep Neural Networks approaches. Refer to the practical classes for more information about how to work on a deep learning-based project. **You may user Keras, TensorFlow, or PyTorch libraries in Python.**
 
 | # | Project title | Description |
 | ------------ | ------------ | -------- |
