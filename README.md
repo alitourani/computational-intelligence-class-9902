@@ -37,7 +37,7 @@ This page contains the course materials and final projects, developed at the **U
 | 5 | To be defined | 960122680008, 960122680027 |
 | 6 | To be defined | 960122680098, 960122680099 |
 | 7 | Face detection | 980122680005, 980122680100, 980122680094, 980122680095 |
-| 8 | To be defined | 970122680099, 980122680042, 980122681010 |
+| 8 | Breast cancer prediction | 970122680099, 980122680042, 980122681010 |
 | 9 | Music genre classification | 980122680046, 980122680023, 980122680029 |
 
 ### ⚠️ Available Project Titles ⚠️
@@ -57,7 +57,7 @@ Each studen group can choose one of the available project titles before it is ta
 | 9 | Image captioning | Image & Text |
 | 10 | ~~Sign language recognition~~ | Image data |
 | 11 | Chatbot | Text |
-| 12 | Breast cancer prediction | Image data |
+| 12 | ~~f~~ | Image data |
 | 13 | Fake news detection | Text |
 
 ## 🔗 Useful Links
