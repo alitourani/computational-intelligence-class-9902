@@ -34,7 +34,7 @@ This page contains the course materials and final projects, developed at the **U
 | 2 | Sign language recognition | 9712268105, 960122680104 |
 | 3 | To be defined | 970122680010, 970122680025, 970122680007 |
 | 4 | To be defined | 970122681006, 970122680015 |
-| 5 | To be defined | 960122680008, 960122680027 |
+| 5 | Chatbot | 960122680008, 960122680027 |
 | 6 | To be defined | 960122680098, 960122680099 |
 | 7 | Face detection | 980122680005, 980122680100, 980122680094, 980122680095 |
 | 8 | Breast cancer prediction | 970122680099, 980122680042, 980122681010 |
@@ -56,7 +56,7 @@ Each studen group can choose one of the available project titles before it is ta
 | 8 | Spoken digit classification | [Audio data](https://github.com/Jakobovski/free-spoken-digit-dataset "Audio data") |
 | 9 | Image captioning | Image & Text |
 | 10 | ~~Sign language recognition~~ | Image data |
-| 11 | Chatbot | Text |
+| 11 | ~~Chatbot~~ | Text |
 | 12 | ~~f~~ | Image data |
 | 13 | Fake news detection | Text |
 
