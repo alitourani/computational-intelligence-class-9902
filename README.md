@@ -39,6 +39,7 @@ This page contains the course materials and final projects, developed at the **U
 | 7 | Face detection | 980122680005, 980122680100, 980122680094, 980122680095 |
 | 8 | Breast cancer prediction | 970122680099, 980122680042, 980122681010 |
 | 9 | Music genre classification | 980122680046, 980122680023, 980122680029 |
+| 10 | 960122681008 |
 
 ### ⚠️ Available Project Titles ⚠️
 
@@ -52,7 +53,7 @@ Each studen group can choose one of the available project titles before it is ta
 | 4 | ~~Drowsiness detection~~ | Image data |
 | 5 | Stock prices prediction | Time Series |
 | 6 | ~~Social Media Sentiment Analysis~~ | Text |
-| 7 | Measuring semantic textual similarity | Text |
+| 7 | ~~Measuring semantic textual similarity~~ | Text |
 | 8 | ~~Spoken digit classification~~ | [Audio data](https://github.com/Jakobovski/free-spoken-digit-dataset "Audio data") |
 | 9 | Image captioning | Image & Text |
 | 10 | ~~Sign language recognition~~ | Image data |
