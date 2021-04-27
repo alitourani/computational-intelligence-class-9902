@@ -46,7 +46,7 @@ Each studen group can choose one of the available project titles before it is ta
 
 | # | Project title | Description |
 | ------------ | ------------ | -------- |
-| ~~1 | Face detection  | Image data~~ |
+| 1 | ~~Face detection~~ | Image data |
 | 2 | Music genre classification | Audio data |
 | 3 | Sales forecasting | Time Series |
 | 4 | Drowsiness detection | Image data |
