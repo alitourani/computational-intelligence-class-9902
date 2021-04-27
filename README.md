@@ -33,7 +33,7 @@ This page contains the course materials and final projects, developed at the **U
 | 1 | Spoken digit classification | 970122680033, 9712268100, 980122680047 |
 | 2 | Sign language recognition | 9712268105, 960122680104 |
 | 3 | Drowsiness detection | 970122680010, 970122680025, 970122680007 |
-| 4 | To be defined | 970122681006, 970122680015 |
+| 4 | Social Media Sentiment Analysis | 970122681006, 970122680015 |
 | 5 | Chatbot | 960122680008, 960122680027 |
 | 6 | To be defined | 960122680098, 960122680099 |
 | 7 | Face detection | 980122680005, 980122680100, 980122680094, 980122680095 |
@@ -51,7 +51,7 @@ Each studen group can choose one of the available project titles before it is ta
 | 3 | Sales forecasting | Time Series |
 | 4 | ~~Drowsiness detection~~ | Image data |
 | 5 | Stock prices prediction | Time Series |
-| 6 | Social Media Sentiment Analysis | Text |
+| 6 | ~~Social Media Sentiment Analysis~~ | Text |
 | 7 | Measuring semantic textual similarity | Text |
 | 8 | ~~Spoken digit classification~~ | [Audio data](https://github.com/Jakobovski/free-spoken-digit-dataset "Audio data") |
 | 9 | Image captioning | Image & Text |
