@@ -30,7 +30,7 @@ This page contains the course materials and final projects, developed at the **U
 
 | # | Project title | Member(s) |
 | ------------ | ------------ | ------------ |
-| 1 | To be defined | 970122680033, 9712268100, 980122680047 |
+| 1 | Spoken digit classification | 970122680033, 9712268100, 980122680047 |
 | 2 | Sign language recognition | 9712268105, 960122680104 |
 | 3 | To be defined | 970122680010, 970122680025, 970122680007 |
 | 4 | To be defined | 970122681006, 970122680015 |
@@ -53,11 +53,11 @@ Each studen group can choose one of the available project titles before it is ta
 | 5 | Stock prices prediction | Time Series |
 | 6 | Social Media Sentiment Analysis | Text |
 | 7 | Measuring semantic textual similarity | Text |
-| 8 | Spoken digit classification | [Audio data](https://github.com/Jakobovski/free-spoken-digit-dataset "Audio data") |
+| 8 | ~~Spoken digit classification~~ | [Audio data](https://github.com/Jakobovski/free-spoken-digit-dataset "Audio data") |
 | 9 | Image captioning | Image & Text |
 | 10 | ~~Sign language recognition~~ | Image data |
 | 11 | ~~Chatbot~~ | Text |
-| 12 | ~~f~~ | Image data |
+| 12 | ~~Breast cancer prediction~~ | Image data |
 | 13 | Fake news detection | Text |
 
 ## 🔗 Useful Links
