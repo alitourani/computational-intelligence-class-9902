@@ -24,7 +24,9 @@ This page contains the course materials and final projects, developed at the **U
 | # | Date | Status |
 | ------------ | ------------ | ---------- |
 | 1 | 20th Esfand 1399 (10th March 2021) – 18:30 to 20:00 | Held |
-| 2 | 17th Farvardin 1400 (6th August 2021) – 18:00 to 19:30 | Held |
+| 2 | 17th Farvardin 1400 (6th April 2021) – 18:00 to 19:30 | Held |
+| 3 | 1st Ordibehesht 1400 (21th April 2021) – 18:00 to 19:30 | Held |
+| 4 | 20th Ordibehesht 1400 (10th May 2021) – 18:30 to 19:30 | Held |
 
 ## 🔨 Teams and Project Titles
 
@@ -41,7 +43,7 @@ This page contains the course materials and final projects, developed at the **U
 | 9 | Music genre classification | 980122680046, 980122680023, 980122680029 |
 | 10 | Measuring semantic textual similarity | 960122681008 |
 
-### ⚠️ Available Project Titles ⚠️
+### ⚠️ Project Titles (Deadline: 30th April)
 
 Each studen group can choose one of the available project titles before it is taken by other groups. Project titles should be unique and are assigned to only one group. So, choose a project title and email it with your group number to the lecturer or TA ASAP. Consider that all of the projects should be implemented by Deep Neural Networks approaches. Refer to the practical classes for more information about how to work on a deep learning-based project. **You may user Keras, TensorFlow, or PyTorch libraries in Python.**
 
