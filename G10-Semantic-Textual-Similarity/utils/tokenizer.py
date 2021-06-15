@@ -25,8 +25,8 @@ def save_wordvec(vectors, dictionary_path):
   with open(dictionary_path, 'wb') as file:
     pickle.dump(vectors, file, pickle.HIGHEST_PROTOCOL)
 
-def start_embedding():
+def start_embedding(path):
   vector = {}
   vector['hi'] = np.array(np.random.uniform(-5.0, 5.0, 300))
-  save_wordvec(vector, './data/vectors.pkl')
+  save_wordvec(vector, path)
   print ('Hi!')
