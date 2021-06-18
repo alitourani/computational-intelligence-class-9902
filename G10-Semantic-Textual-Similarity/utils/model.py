@@ -61,4 +61,4 @@ class LSTM(nn.Module):
     input_index = self.vocab[input]
     input = torch.tensor(self.embeds[input_index]).view(1, 1, -1)
     output, (hidden, cell) = self.lstm(input, (hidden, cell))
-    return output
+    return output, hidden, cell
