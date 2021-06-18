@@ -12,7 +12,7 @@ class Siamese(nn.Module):
     self.mode = config['model']['embed_mode']
     self.classifier = nn.Sequential(
       nn.Linear(self.input_dim, int(self.input_dim / 2)),
-      nn.Linear(int(self.input_dim / 2), 2)
+      nn.Linear(int(self.input_dim / 2), 1)
     )
 
   def forward(self, sentence1, sentence2):
