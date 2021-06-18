@@ -9,6 +9,7 @@ class Siamese(nn.Module):
     self.lstm = LSTM(config)
 
     self.input_dim = 5 * self.encoder.direction * self.encoder.hidden_size
+    self.mode = config['model']['embed_mode']
     self.classifier = nn.Sequential(
       nn.Linear(self.input_dim, self.input_dim/2),
       nn.Linear(self.input_dim/2, 2)
@@ -18,17 +19,23 @@ class Siamese(nn.Module):
     hidden_number1, hidden_cell1 = self.lstm.initHidden()
     hidden_number2, hidden_cell2 = self.lstm.initHidden()
 
-    for word1 in sentence1.split():
-      vector1, hidden_number1, hidden_cell1 = self.lstm(word1, hidden_number1, hidden_cell1)
+    if self.mode == 'word':
+      for word1 in sentence1.split():
+        vector1, hidden_number1, hidden_cell1 = self.lstm(word1, hidden_number1, hidden_cell1)
 
-    for word2 in sentence2.split():
-      vector2, hidden_number2, hidden_cell2 = self.lstm(word2, hidden_number2, hidden_cell2)
+      for word2 in sentence2.split():
+        vector2, hidden_number2, hidden_cell2 = self.lstm(word2, hidden_number2, hidden_cell2)
+
+    elif self.mode == 'char':
+      for i in range(len(sentence1)):
+        vector1, hidden_number1, hidden_cell1 = self.lstm(sentence1[i], hidden_number1, hidden_cell1)
+
+      for j in range (len(sentence2)):
+        vector1, hidden_number1, hidden_cell1 = self.lstm(sentence2[j], hidden_number1, hidden_cell1)
 
     features = torch.cat((vector1, vector2, torch.abs(vector1 - vector2), vector1*vector2, (vector1+vector2)/2), 2)
     output = self.classifier(features)
     return output
-
-
 
 class LSTM(nn.Module):
   def __init__(self, config):
@@ -52,7 +59,7 @@ class LSTM(nn.Module):
     hidden_cell =  Variable(torch.randn(self.direction * self.num_layers, self.batch_size, self.hidden_size))
     return hidden_number, hidden_cell
 
-  def forward(self, word, hidden, cell):
-    word = torch.tensor(self.embeds[word]).view(1, 1, -1)
-    output, (hidden, cell) = self.lstm(word, (hidden, cell))
+  def forward(self, input, hidden, cell):
+    input = torch.tensor(self.embeds[input]).view(1, 1, -1)
+    output, (hidden, cell) = self.lstm(input, (hidden, cell))
     return output
