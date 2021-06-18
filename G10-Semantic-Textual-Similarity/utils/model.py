@@ -48,6 +48,7 @@ class LSTM(nn.Module):
     self.dropout = config['model']['encoder']['dropout']
     self.lstm = nn.LSTM(input_size=self.embed_size, hidden_size=self.hidden_size, dropout=self.dropout, num_layers=self.num_layers, bidirectional=self.bidir)
 
+    self.direction = 2 if self.bidir else 1
     self.embeds = config['embedding']
   
   def initHidden(self):
