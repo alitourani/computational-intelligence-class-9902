@@ -11,8 +11,8 @@ class Siamese(nn.Module):
     self.input_dim = 5 * self.lstm.direction * self.lstm.hidden_size
     self.mode = config['model']['embed_mode']
     self.classifier = nn.Sequential(
-      nn.Linear(self.input_dim, self.input_dim/2),
-      nn.Linear(self.input_dim/2, 2)
+      nn.Linear(self.input_dim, int(self.input_dim / 2)),
+      nn.Linear(int(self.input_dim / 2), 2)
     )
 
   def forward(self, sentence1, sentence2):
@@ -33,7 +33,7 @@ class Siamese(nn.Module):
       for j in range (len(sentence2)):
         vector1, hidden_number1, hidden_cell1 = self.lstm(sentence2[j], hidden_number1, hidden_cell1)
 
-    features = torch.cat((vector1, vector2, torch.abs(vector1 - vector2), vector1*vector2, (vector1+vector2)/2), 2)
+    features = torch.cat((vector1, vector2, torch.abs(vector1 - vector2), vector1 * vector2, (vector1 + vector2) / 2), 2)
     output = self.classifier(features)
     return output
 
