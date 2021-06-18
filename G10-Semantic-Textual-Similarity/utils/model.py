@@ -59,6 +59,6 @@ class LSTM(nn.Module):
 
   def forward(self, input, hidden, cell):
     input_index = self.vocab[input]
-    input = torch.tensor(self.embeds[input_index]).view(1, 1, -1)
+    input = self.embeds[input_index].view(1, 1, -1)
     output, (hidden, cell) = self.lstm(input, (hidden, cell))
     return output, hidden, cell
