@@ -47,12 +47,7 @@ class LSTM(nn.Module):
     self.bidir = config['model']['encoder']['bidirectional']
     self.lstm = nn.LSTM(input_size=self.embed_size, hidden_size=self.hidden_size, dropout=self.dropout, num_layers=self.num_layers, bidirectional=self.bidir)
 
-    self.dictionary_path = config['embed_path']
-    vectors = {}
-    with open(self.dictionary_path, 'rb') as load_file:
-      dict = pickle.load(load_file)
-      vectors = dict
-    self.embeds = vectors
+    self.embeds = config['embedding']
   
   def initHidden(self):
     hidden_number = Variable(torch.randn(self.direction * self.num_layers, self.batch_size, self.hidden_size))
