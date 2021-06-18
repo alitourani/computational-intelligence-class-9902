@@ -45,6 +45,7 @@ class LSTM(nn.Module):
     self.hidden_size = config['model']['encoder']['hidden_size']
     self.num_layers = config['model']['encoder']['num_layers']
     self.bidir = config['model']['encoder']['bidirectional']
+    self.dropout = config['model']['encoder']['dropout']
     self.lstm = nn.LSTM(input_size=self.embed_size, hidden_size=self.hidden_size, dropout=self.dropout, num_layers=self.num_layers, bidirectional=self.bidir)
 
     self.embeds = config['embedding']
