@@ -1,58 +1,74 @@
 import numpy as np
 import pickle
 
-def load_wordvec(word_dict, dictionary_path, embedding_dim = 300):
-  vectors = {}
-  with open(dictionary_path, 'rb') as load_file:
+def load_wordvec(word_vocab, embed_path, embedding_dim = 300):
+  mother_vectors = {}
+  with open(embed_path, 'rb') as load_file:
     dict = pickle.load(load_file)
-    vectors = dict
+    mother_vectors = dict
 
-  loaded_len = len(vectors)
+  loaded_len = len(mother_vectors)
   print('Loaded', loaded_len, 'already embedded words.')
 
-  for word in word_dict:
-    if word not in vectors:
-      vectors[word] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
+  current_vectors = {}
+  for word in word_vocab:
+    if word not in mother_vectors:
+      mother_vectors[word] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
+    current_vectors[word] = mother_vectors[word]
   
-  print('Added', len(vectors) - loaded_len, 'new words to the embedding.')
+  print('Added', len(mother_vectors) - loaded_len, 'new words to the embedding.')
+  print('Loaded', len(current_vectors), 'words to our current dictionary')
   
-  save_vec(vectors, dictionary_path)
-  print('Embedding saved')
+  save_vec(mother_vectors, embed_path)
+  print('Embeddings saved')
 
-  return vectors
+  return current_vectors
 
-def start_word_embedding(path, embedding_dim = 300):
+def reset_word_embedding(embed_path, embedding_dim = 300):
   vector = {}
   vector['hi'] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
-  save_vec(vector, path)
+  save_vec(vector, embed_path)
   print ('Dictionary file created.')
 
-def load_charvec(char_dict, dictionary_path, embedding_dim = 100):
-  vectors = {}
-  with open(dictionary_path, 'rb') as load_file:
+def load_charvec(char_vocab, embed_path, embedding_dim = 100):
+  mother_vectors = {}
+  with open(embed_path, 'rb') as load_file:
     dict = pickle.load(load_file)
-    vectors = dict
+    mother_vectors = dict
 
-  loaded_len = len(vectors)
+  loaded_len = len(mother_vectors)
   print('Loaded', loaded_len, 'already embedded chars')
 
-  for char in char_dict:
-    if char not in vectors:
-      vectors[char] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
+  current_vectors = {}
+  for char in char_vocab:
+    if char not in mother_vectors:
+      mother_vectors[char] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
+    current_vectors[char] = mother_vectors[char]
   
-  print('Added', len(vectors) - loaded_len, 'new chars to the embedding.')
+  print('Added', len(mother_vectors) - loaded_len, 'new chars to the embedding.')
   
-  save_vec(vectors, dictionary_path)
+  save_vec(mother_vectors, embed_path)
   print('Embedding saved.')
 
-  return vectors
+  return current_vectors
 
-def start_char_embedding(path, embedding_dim = 100):
+def reset_char_embedding(embed_path, embedding_dim = 100):
   vector = {}
   vector['a'] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
-  save_vec(vector, path)
+  save_vec(vector, embed_path)
   print('Dictionary file created.')
 
-def save_vec(vectors, dictionary_path):
-  with open(dictionary_path, 'wb') as file:
+def save_vec(vectors, embed_path):
+  with open(embed_path, 'wb') as file:
     pickle.dump(vectors, file, pickle.HIGHEST_PROTOCOL)
+
+def change_weights_of_mother(vectors, embed_path):
+  with open(embed_path, 'rb') as load_file:
+    dict = pickle.load(load_file)
+    mother_vectors = dict
+
+  for word in vectors:
+    if word in mother_vectors:
+      mother_vectors[word] = vectors[word]
+  
+  save_vec(mother_vectors, embed_path)
