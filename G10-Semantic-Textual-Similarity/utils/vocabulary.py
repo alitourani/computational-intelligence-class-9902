@@ -6,4 +6,5 @@ def vocabulary(sentence_pairs):
     for j in range(len(words)):
       vocab.add(words[j])
 
+  print('Made a vocabulary of', len(vocab), 'words.')
   return vocab

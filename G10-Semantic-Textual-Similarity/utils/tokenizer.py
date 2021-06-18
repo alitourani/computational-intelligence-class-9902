@@ -8,13 +8,13 @@ def load_wordvec(word_dict, dictionary_path, embedding_dim = 300):
     vectors = dict
 
   loaded_len = len(vectors)
-  print('Loaded', loaded_len, 'already embedded words')
+  print('Loaded', loaded_len, 'already embedded words.')
 
   for word in word_dict:
     if word not in vectors:
       vectors[word] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
   
-  print('Added', len(vectors) - loaded_len, 'new embeddings')
+  print('Added', len(vectors) - loaded_len, 'new words to the embedding.')
   
   save_vec(vectors, dictionary_path)
   print('Embedding saved')
@@ -40,10 +40,10 @@ def load_charvec(char_dict, dictionary_path, embedding_dim = 100):
     if char not in vectors:
       vectors[char] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
   
-  print('Added', len(vectors) - loaded_len, 'new embeddings')
+  print('Added', len(vectors) - loaded_len, 'new chars to the embedding.')
   
   save_vec(vectors, dictionary_path)
-  print('Embedding saved')
+  print('Embedding saved.')
 
   return vectors
 
