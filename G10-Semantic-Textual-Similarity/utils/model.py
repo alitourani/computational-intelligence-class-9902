@@ -8,7 +8,7 @@ class Siamese(nn.Module):
     super().__init__()
     self.lstm = LSTM(config)
 
-    self.input_dim = 5 * self.encoder.direction * self.encoder.hidden_size
+    self.input_dim = 5 * self.lstm.direction * self.lstm.hidden_size
     self.mode = config['model']['embed_mode']
     self.classifier = nn.Sequential(
       nn.Linear(self.input_dim, self.input_dim/2),
