@@ -1,9 +1,9 @@
 import pandas as pd
 
 class Dataset():
-  def __init__(self, test_ratio = 0.1):
+  def __init__(self, data_path, test_ratio = 0.1):
     dataset = pd.read_csv(
-      'data\snli_1.0.txt',
+      data_path,
       delimiter = '\t',
     )
     dataset.dropna(inplace=True)
