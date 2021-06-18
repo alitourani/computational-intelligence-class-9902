@@ -50,6 +50,7 @@ class LSTM(nn.Module):
 
     self.direction = 2 if self.bidir else 1
     self.embeds = config['embedding']
+    self.vocab = config['vocab']
   
   def initHidden(self):
     hidden_number = Variable(torch.randn(self.direction * self.num_layers, self.batch_size, self.hidden_size))
@@ -57,6 +58,7 @@ class LSTM(nn.Module):
     return hidden_number, hidden_cell
 
   def forward(self, input, hidden, cell):
-    input = torch.tensor(self.embeds[input]).view(1, 1, -1)
+    input_index = self.vocab[input]
+    input = torch.tensor(self.embeds[input_index]).view(1, 1, -1)
     output, (hidden, cell) = self.lstm(input, (hidden, cell))
     return output
