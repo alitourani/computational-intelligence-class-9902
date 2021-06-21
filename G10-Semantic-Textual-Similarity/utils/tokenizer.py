@@ -13,7 +13,7 @@ def load_wordvec(word_vocab, embed_path, embedding_dim = 300):
   current_vectors = {}
   for word in word_vocab:
     if word not in mother_vectors:
-      mother_vectors[word] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
+      mother_vectors[word] = np.array(np.random.uniform(-1.0, 1.0, embedding_dim))
     current_vectors[word] = mother_vectors[word]
   
   print('Added', len(mother_vectors) - loaded_len, 'new words to the embedding.')
@@ -26,7 +26,7 @@ def load_wordvec(word_vocab, embed_path, embedding_dim = 300):
 
 def reset_word_embedding(embed_path, embedding_dim = 300):
   vector = {}
-  vector['hi'] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
+  vector['hi'] = np.array(np.random.uniform(-1.0, 1.0, embedding_dim))
   save_vec(vector, embed_path)
   print ('Dictionary file created.')
 
@@ -42,7 +42,7 @@ def load_charvec(char_vocab, embed_path, embedding_dim = 100):
   current_vectors = {}
   for char in char_vocab:
     if char not in mother_vectors:
-      mother_vectors[char] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
+      mother_vectors[char] = np.array(np.random.uniform(-1.0, 1.0, embedding_dim))
     current_vectors[char] = mother_vectors[char]
   
   print('Added', len(mother_vectors) - loaded_len, 'new chars to the embedding.')
@@ -54,7 +54,7 @@ def load_charvec(char_vocab, embed_path, embedding_dim = 100):
 
 def reset_char_embedding(embed_path, embedding_dim = 100):
   vector = {}
-  vector['a'] = np.array(np.random.uniform(-5.0, 5.0, embedding_dim))
+  vector['a'] = np.array(np.random.uniform(-1.0, 1.0, embedding_dim))
   save_vec(vector, embed_path)
   print('Dictionary file created.')
 

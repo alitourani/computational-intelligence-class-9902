@@ -9,12 +9,19 @@ class Dataset():
     dataset.dropna(inplace=True)
     dataset = dataset.drop(columns = ['gold_label', 'sentence1_binary_parse', 'sentence2_binary_parse', 'sentence1_parse', 'sentence2_parse',
     'captionID', 'pairID'])
-    dataset['score'] = (2.5 + 
-      ((dataset['label1'] == 'entailment').astype(int) / 2) - ((dataset['label1'] == 'contradiction').astype(int) / 2) +
-      ((dataset['label2'] == 'entailment').astype(int) / 2) - ((dataset['label2'] == 'contradiction').astype(int) / 2) +
-      ((dataset['label3'] == 'entailment').astype(int) / 2) - ((dataset['label3'] == 'contradiction').astype(int) / 2) +
-      ((dataset['label4'] == 'entailment').astype(int) / 2) - ((dataset['label4'] == 'contradiction').astype(int) / 2) +
-      ((dataset['label5'] == 'entailment').astype(int) / 2) - ((dataset['label5'] == 'contradiction').astype(int) / 2))
+    dataset['score'] = (0.5 + 
+      ((((dataset['label1'] == 'entailment').astype(int) + (dataset['label2'] == 'entailment').astype(int) + 
+      (dataset['label3'] == 'entailment').astype(int) + (dataset['label4'] == 'entailment').astype(int) + 
+      (dataset['label5'] == 'entailment').astype(int)) * 0.1) - (((dataset['label1'] == 'contradiction').astype(int) + 
+      (dataset['label2'] == 'contradiction').astype(int) + (dataset['label3'] == 'contradiction').astype(int) + 
+      (dataset['label4'] == 'contradiction').astype(int) + (dataset['label5'] == 'contradiction').astype(int)) * 0.1)))
+    # dataset['score'] = (0.5 + 
+    #   ((dataset['label1'] == 'entailment').astype(int) / 10) - ((dataset['label1'] == 'contradiction').astype(int) / 10) +
+    #   ((dataset['label2'] == 'entailment').astype(int) / 10) - ((dataset['label2'] == 'contradiction').astype(int) / 10) +
+    #   ((dataset['label3'] == 'entailment').astype(int) / 10) - ((dataset['label3'] == 'contradiction').astype(int) / 10) +
+    #   ((dataset['label4'] == 'entailment').astype(int) / 10) - ((dataset['label4'] == 'contradiction').astype(int) / 10) +
+    #   ((dataset['label5'] == 'entailment').astype(int) / 10) - ((dataset['label5'] == 'contradiction').astype(int) / 10))
+
     dataset = dataset.drop(columns = ['label1', 'label2', 'label3', 'label4', 'label5'])
     dataset = dataset.sample(frac = 1, random_state = 1).reset_index(drop = True)
     num_instances = len(dataset)
