@@ -13,7 +13,7 @@ class Siamese(nn.Module):
 
     layers = [
       nn.Linear(self.input_dim, int(self.input_dim / 2)),
-      nn.Linear(int(self.input_dim / 2), 2)]
+      nn.Linear(int(self.input_dim / 2), 3)]
     if self.loss_mode == 'mse':
       layers = [
         nn.Linear(self.input_dim, int(self.input_dim / 2)),
