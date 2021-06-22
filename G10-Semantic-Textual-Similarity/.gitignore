@@ -1,2 +1,8 @@
-#vs code files
+# VS code files
 .vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Dictionary embedding files
+embed.pkl
