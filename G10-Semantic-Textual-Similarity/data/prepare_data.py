@@ -1,7 +1,7 @@
 import pandas as pd
 
 class Dataset():
-  def __init__(self, data_path, test_ratio = 0.1):
+  def __init__(self, data_path, validation_ratio = 0.2, test_ratio = 0.2):
     dataset = pd.read_csv(
       data_path,
       delimiter = '\t',
@@ -25,10 +25,12 @@ class Dataset():
     dataset = dataset.drop(columns = ['label1', 'label2', 'label3', 'label4', 'label5'])
     dataset = dataset.sample(frac = 1, random_state = 1).reset_index(drop = True)
     num_instances = len(dataset)
-    self.num_train = num_instances * (1 - test_ratio) 
+    self.num_train = num_instances * (1 - test_ratio - validation_ratio) 
     self.num_test = num_instances * test_ratio
-    self.train_dataset = dataset.loc[:self.num_train]
-    self.test_dataset = dataset.loc[self.num_train : self.num_train + self.num_test]
+    self.num_validation = num_instances * validation_ratio
+    self.validation_dataset = dataset.loc[:self.num_validation]
+    self.test_dataset = dataset.loc[self.num_validation : self.num_validation + self.num_test]
+    self.train_dataset = dataset.loc[self.num_validation + self.num_test : self.num_train + self.num_validation + self.num_test]
 
   def train_set(self):
     return self.train_dataset
@@ -41,6 +43,18 @@ class Dataset():
 
   def train_set_num(self):
     return len(self.train_dataset)
+
+  def validation_set(self):
+    return self.validation_dataset
+  
+  def validation_set_pairs(self):
+    return self.validation_dataset[['sentence1', 'sentence2']].values
+
+  def validation_set_scores(self):
+    return self.validation_dataset['score'].values
+
+  def validation_set_num(self):
+    return len(self.validation_dataset)
 
   def test_set(self):
     return self.test_dataset
