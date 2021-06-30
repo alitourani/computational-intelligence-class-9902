@@ -32,7 +32,7 @@ This page contains the course materials and final projects, developed at the **U
 
 | # | Project title | Member(s) |
 | ------------ | ------------ | ------------ |
-| 1 | Spoken digit classification | 970122680033, 9712268100, 980122680047 |
+| 1 | [Spoken digit classification](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G01-Spoken-Digit-Classification "Spoken digit classification") | 970122680033, 9712268100, 980122680047 |
 | 2 | [Sign language recognition](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G02-Sign-Language-Recognition "Sign language recognition") | 9712268105, 960122680104 |
 | 3 | [Drowsiness detection](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G03-Drowsiness-Detection "Drowsiness detection") | 970122680010, 970122680025, 970122680007 |
 | 4 | [Social Media Sentiment Analysis](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G04-Social-Media-Sentiment-Analysis "Social Media Sentiment Analysis") | 970122681006, 970122680015 |
