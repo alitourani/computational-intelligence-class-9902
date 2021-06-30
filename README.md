@@ -40,7 +40,7 @@ This page contains the course materials and final projects, developed at the **U
 | 6 | [Fake news detection](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G06-Fake-News-Detection "Fake news detection") | 960122680098, 960122680099 |
 | 7 | [Face detection](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G07-Face-Detection "Face detection") | 980122680005, 980122680100, 980122680094, 980122680095 |
 | 8 | [Breast cancer prediction](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G08-Breast-Cancer-Prediction "Breast cancer prediction") | 970122680099, 980122680042, 980122681010 |
-| 9 | Music genre classification | 980122680046, 980122680023, 980122680029 |
+| 9 | [Music genre classification](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G09-Music-Genre-Classification "Music genre classification") | 980122680046, 980122680023, 980122680029 |
 | 10 | [Measuring Semantic Textual Similarity](https://github.com/alitourani/computational-intelligence-class-9902/tree/main/G10-Semantic-Textual-Similarity "Measuring semantic textual similarity") | 960122681008 |
 
 ### ⚠️ Project Titles (Deadline: 30th April)
