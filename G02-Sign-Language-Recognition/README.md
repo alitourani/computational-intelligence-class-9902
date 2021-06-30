@@ -6,4 +6,6 @@
 ------------
 
 ## Description:
-To be defined
+Dataset : dataset links are available in the pdf file.
+
+It is clearly explained in the video how to run the project.
