@@ -9,7 +9,6 @@ we import our dataset and using tokenizer we convert our input dataset to fit ou
  training the tokens takes place with 15 epochs after the training is done   accuracy levels is about 85% 
 this dataset has more negative sentiment than positive or nuetral so the accuracy level in negative sentiments is more accurate and about 90%
 
-##Links
 ### Dataset
 [Twitter Airline Sentiment](https://data.world/crowdflower/airline-twitter-sentiment)
 ### Refrences
