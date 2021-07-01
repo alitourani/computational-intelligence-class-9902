@@ -7,4 +7,8 @@
 ------------
 
 ## Description:
-To be defined
+these are our final files:
+New Text Document(2).txt, 
+گزارشکار.pdf, 
+videoURL.txt, 
+تئوری پروژه هوش محاسباتی.mp4
